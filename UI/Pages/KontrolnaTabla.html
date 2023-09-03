@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kontrolna tabla</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+
+    <style>
+        .filter-button {
+            width: 100px;
+            height: 50px;
+            padding: 0px 14px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav>
+        <nav>
+            <div class="logo">
+                <a href="PocetnaStranica.html">Početna</a>
+            </div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a id="profile-name" href="#"></a>
+                    <div class="dropdown-content">
+                        <button id="logoutBtn" class="blue-btn">Odjava</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <!-- Sadržaj -->
+    <main>
+        <div class="content">
+            <!-- Profil admina -->
+            <div class="profile-info">
+                <div class="profile-header">
+                    <h1>Kontrolna tabla</h1>
+                    <button class="btn-edit" id="editBtn">Izmena</button>
+                </div>
+                <div class="profile-data">
+                    <div class="profile-element">
+                        <h2>Korisničko ime</h2>
+                        <h3 id="usrname"></h3>
+                    </div>
+                    <div class="profile-element">
+                        <span></span>
+                    </div>
+                    <div class="profile-element">
+                        <h2>Ime</h2>
+                        <h3 id="fname"></h3>
+                    </div>
+                    <div class="profile-element">
+                        <h2>Prezime</h2>
+                        <h3 id="lname"></h3>
+                    </div>
+                    <div class="profile-element">
+                        <h2>Pol</h2>
+                        <h3 id="gender"></h3>
+                    </div>
+                    <div class="profile-element">
+                        <h2>Email</h2>
+                        <h3 id="email"></h3>
+                    </div>
+                    <div class="profile-element">
+                        <h2>Datum rođenja</h2>
+                        <h3 id="dob"></h3>
+                    </div>
+                    <div class="profile-element">
+                        <h2>Uloga</h2>
+                        <h3 id="role"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recenzije - još uvek neodobrene i odbijene -->
+            <div class="items-container">
+                <h1>Recenzije koje čekaju da budu odobrene</h1>
+                <div id="approved" class="reviews">
+                    <!-- Dinamički popunjava JS funkcija -->
+                </div>
+            </div>
+            <div class="items-container">
+                <h1>Odbijene recenzije</h1>
+                <div id="denied" class="reviews">
+                    <!-- Dinamički popunjava JS funkcija -->
+                </div>
+            </div>
+
+            <!-- Svi proizvodi -->
+            <div class="items-container">
+                <h1 id="product-title">Svi proizvodi</h1>
+                <div id="filterBtns">
+                    <div class="filter-buttons">
+                        <label><input type="checkbox" id="filterCheck" checked onchange="sortAvailable" /> Dostupni</label>
+                        <button id="nameUp" onclick="SortiranjeNaziv(false)" class="filter-button">Naziv asc</button>
+                        <button id="nameDown" onclick="SortiranjeNaziv(true)" class="filter-button">Naziv desc</button>
+                        <button id="priceUp" onclick="SortiranjeCena(false)" class="filter-button">Cena asc</button>
+                        <button id="priceDown" onclick="SortiranjeCena(true)" class="filter-button">Cena desc</button>
+                        <button id="dateUp" onclick="SortiranjeDatum(false)" class="filter-button">Datum asc</button>
+                        <button id="dateDown" onclick="SortiranjeDatum(true)" class="filter-button">Datum desc</button>
+                    </div>
+                </div>
+                <div class="products">
+                    <!-- Dinamički popunjava JS funkcija -->
+                </div>
+            </div>
+
+            <!-- Svi korisnici (neobrisani - logično) -->
+            <div class="items-container">
+                <div class="profile-header">
+                    <h1>Svi korisnici</h1>
+                    <button class="blue-btn userAdd" id="userAddBtn">Prodavac +</button>
+                </div>
+
+                <!-- Pretrage korisnika -->
+                <div id="btnActions" >
+                    <div id="searchBtns" style="padding: 10px 70px">
+                        <div>
+                            <label>Ime:</label>
+                            <input type="search" id="searchFName" class="textbox" placeholder="Petar" />
+                        </div>
+                        <div>
+                            <label>Prezime:</label>
+                            <input type="search" id="searchLName" class="textbox" placeholder="Petrović" />
+                        </div>
+                        <div>
+                            <label>Datum rođenja:</label><br />
+                            <label><input type="date" id="minDate" class="textbox" /> - <input type="date" class="textbox" id="maxDate" /> </label>
+                        </div>
+                        <div>
+                            <label>Uloga:</label><br />
+                            <select id="searchRole" class="textbox">
+                                <option value="-1" selected>Default</option>
+                                <option value="0">Buyer</option>
+                                <option value="1">Seller</option>
+                                <option value="2">Administrator</option>
+                            </select>
+                        </div>
+                        <button id="searchUser" onclick="PretragaKorisnika()" class="blue-btn">Pretraga</button>
+                    </div>
+                    <div class="filter-buttons">
+                        <button id="nameUp" onclick="SortiranjeIme(false)" class="filter-button">Ime asc</button>
+                        <button id="nameDown" onclick="SortiranjeIme(true)" class="filter-button">Ime desc</button>
+                        <button id="priceUp" onclick="SortiranjeUloga(false)" class="filter-button">Uloga acs</button>
+                        <button id="priceDown" onclick="SortiranjeUloga(true)" class="filter-button">Uloga desc</button>
+                        <button id="dateUp" onclick="SortiranjeDatumRodjenja(false)" class="filter-button">Datum asc</button>
+                        <button id="dateDown" onclick="SortiranjeDatumRodjenja(true)" class="filter-button">Datum desc</button>
+                    </div>
+                </div>
+
+                <!-- Tabela sa korisnicima -->
+                <table id="users" class="users datatable">
+                    <thead>
+                        <tr>
+                            <th>Korisničko ime</th>
+                            <th>Ime</th>
+                            <th>Prezime</th>
+                            <th>Email</th>
+                            <th>Uloga</th>
+                            <th>Pol</th>
+                            <th>Datum rođenja</th>
+                            <th>Radnja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dinamički popunjava JS funkcija -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sve porudžbine -->
+            <div class="items-container">
+                <h1>Sve porudžbine</h1>
+                <table class="orders datatable">
+                    <thead>
+                        <tr>
+                            <th>ID porudžbine</th>
+                            <th>Naziv proizvoda</th>
+                            <th>Količina</th>
+                            <th>Datum poručivanja</th>
+                            <th>Status porudžbine</th>
+                            <th>Radnja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dinamički popunjava JS funkcija -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Skripte -->
+    <script src="../Scripts/jquery-3.7.0.js"></script>
+    <script src="JavaScript/Zajednicko.js"></script>
+    <script src="JavaScript/KontrolnaTabla.js"></script>
+    <script src="JavaScript/Pretrage.js"></script>
+
+</body>
+</html>

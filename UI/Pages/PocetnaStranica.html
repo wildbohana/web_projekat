@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Početna stranica</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav>
+        <div class="logo">
+            <a href="PocetnaStranica.html">Početna</a>
+        </div>
+        <div class="nav-links">
+            <ul id="links" class="hide link-list">
+                <li><a href="Prijava.html">Prijava</a></li>
+                <li><a href="Registracija.html">Registracija</a></li>
+            </ul>
+            <div id="dropdown" class="hide dropdown">
+                <a id="profile-name" href="#"></a>
+                <div class="dropdown-content">
+                    <button id="logoutBtn" class="blue-btn">Odjava</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sadržaj -->
+    <main>
+        <div class="grid-container">
+            
+            <!-- Sa leve strane - sortiranje proizvoda -->
+            <div class="grid-filter">
+                <h2 style="text-align:center; padding: 8px 2px;">Sortiranje proizvoda</h2>
+                <button id="nameUp" onclick="SortiranjeNaziv(false)" class="filter-button">Naziv Rastuće</button>
+                <button id="nameDown" onclick="SortiranjeNaziv(true)" class="filter-button">Naziv Opadajuće</button>
+                <button id="priceUp" onclick="SortiranjeCena(false)" class="filter-button">Cena Rastuće</button>
+                <button id="priceDown" onclick="SortiranjeCena(true)" class="filter-button">Cena Opadajuće</button>
+                <button id="dateUp" onclick="SortiranjeDatum(false)" class="filter-button">Datum Rastuće</button>
+                <button id="dateDown" onclick="SortiranjeDatum(true)" class="filter-button">Datum Opadajuće</button>
+            </div>
+
+            <!-- Sa leve strane - filter proizvoda -->
+            <div class="grid-menu">
+                <div>
+                    <label>Pretraga</label>
+                    <input id="name" type="search" placeholder="Ime proizvoda" class="textbox" />
+                </div>
+                <br />
+
+                <div>
+                    <label>Cena (min - max)</label>
+                    <br />
+                    <input id="min" type="number" value="0" min="0" /> - <input id="max" type="number" value="500000" min="0" />
+                </div>
+                <br />
+
+                <div>
+                    <label>Grad</label>
+                    <input id="city" type="search" placeholder="Bačka Palanka" class="textbox" />
+                </div>
+                <br />
+
+                <button id="searchBtn" class="blue-btn">Traži</button>
+            </div>
+
+            <!-- Prikaz dostupnih proizvoda -->
+            <div class="items-container grid-content">
+                <!-- Dinamički popunjava JS funkcija -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Skripte -->
+    <script src="../Scripts/jquery-3.7.0.js"></script>
+    <script src="JavaScript/Zajednicko.js"></script>
+    <script src="JavaScript/PocetnaStranica.js"></script>
+    <script src="JavaScript/Pretrage.js"></script>
+
+</body>
+</html>

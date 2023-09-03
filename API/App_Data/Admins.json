@@ -1,0 +1,19 @@
+[
+  {
+    "ID": 0,
+    "Username": "admin",
+    "Password": "kmexu4U0bA436UG/VJTEOlBFXCzosqaAs+tLt+1ELMA=",
+    "FirstName": "Bojana",
+    "LastName": "Mihajlovic",
+    "FullName": "Bojana Mihajlovic",
+    "Gender": "f",
+    "Email": "admin@wild.rs",
+    "DateOfBirth": "25/07/2001",
+    "Role": 2,
+    "RoleName": "Administrator",
+    "Orders": [],
+    "Favourites": [],
+    "PublishedProducts": [],
+    "isDeleted": false
+  }
+]

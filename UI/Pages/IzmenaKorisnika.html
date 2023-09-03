@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Izmena korisnika</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav>
+        <div class="logo">
+            <a href="PocetnaStranica.html">Početna</a>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a id="profile-name" href="#"></a>
+                <div class="dropdown-content">
+                    <button id="logoutBtn" class="blue-btn">Odjava</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sadržaj -->
+    <main class="content">
+        <div class="signup-form">
+            <h1 id="title" style="text-align:center">Dodaj prodavca</h1>
+            <label id="usrlbl" for="usrname">Korisničko ime:</label>
+            <input id="usrname" type="text" name="Username" placeholder="npr. korisnik123" class="textbox" required />
+            <label id="oldPswdlbl" for="oldPswd" class="hide">Stara lozinka:</label>
+            <input id="oldPswd" type="password" name="Password" placeholder="***" class="hide textbox" required />
+            <label id="pswdlbl" for="pswd">Nova lozinka:</label>
+            <input id="pswd" type="password" name="Password" placeholder="***" class="textbox" required />
+            <label for="fname">Ime:</label>
+            <input id="fname" type="text" name="Firstname" placeholder="Samo ime" class="textbox" required />
+            <label for="lname">Prezime:</label>
+            <input id="lname" type="text" name="Lastname" placeholder="Samo prezime" class="textbox" required />
+            <label for="email">Email</label>
+            <input id="email" type="email" name="Email" placeholder="mejl@adresa.rs" class="textbox" required />
+            <label>Pol:</label>
+            <div>
+                <input id="rbtn-m" type="radio" name="Gender" value="m" checked />
+                <label for="rbtn-m">Muški</label><br />
+                <input id="rbtn-f" type="radio" name="Gender" value="z" />
+                <label for="rbtn-f">Ženski</label>
+            </div>
+            <br />
+            <label>Datum rođenja:</label>
+            <input type="date" id="dob" class="textbox" required />
+            <br />
+
+			<div class="chgBtns">
+                <button id="chgUsrname" class="green-btn hide">Promeni ime</button>
+                <button id="chgPswd" class="green-btn hide">Promeni lozinku</button>
+            </div>
+
+            <div class="chgBtns">
+                <button id="addBtn" class="green-btn">Sačuvaj</button>
+                <button onclick="DoProfila()" class="red-btn">Odustani</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Skripte -->
+    <script src="../Scripts/jquery-3.7.0.js"></script>
+    <script src="JavaScript/Zajednicko.js"></script>
+    <script src="JavaScript/IzmenaKorisnika.js"></script>
+
+</body>
+</html>

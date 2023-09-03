@@ -1,0 +1,68 @@
+[
+  {
+    "ID": 1099299249,
+    "Product": 1222415090,
+    "Reviewer": 1565100692,
+    "Title": "Odradio posao",
+    "Content": "Slika sa Evropskog prvenstva pokazuje to",
+    "Image": "ac1cccc9-23c6-4443-bd3f-dc63a5495a50.jpg",
+    "isDeleted": true,
+    "isApproved": true,
+    "isDenied": false
+  },
+  {
+    "ID": 1992489227,
+    "Product": 1222415090,
+    "Reviewer": 1565100692,
+    "Title": "Jako dobar kanu",
+    "Content": "Odradio posao - išli smo na Evropsko",
+    "Image": "190939e3-d683-4669-bdc2-919b82e0ca91.jpg",
+    "isDeleted": false,
+    "isApproved": false,
+    "isDenied": false
+  },
+  {
+    "ID": 640427590,
+    "Product": 256503792,
+    "Reviewer": 1565100692,
+    "Title": "Zadovoljna",
+    "Content": "Sve je stiglo kako treba, ventilatori hlade bolje nego klima",
+    "Image": "68491aff-39a6-4ac4-99ea-877e982eab62.jpg",
+    "isDeleted": true,
+    "isApproved": true,
+    "isDenied": false
+  },
+  {
+    "ID": 2102951261,
+    "Product": 1280125927,
+    "Reviewer": 1565100692,
+    "Title": "Dobro napajanje",
+    "Content": "Ima sve konektore koji su mi bili potrebni, i taman je dimenzija za moje kućište",
+    "Image": "6808e805-a5c9-4153-9422-aebc32b83510.jpg",
+    "isDeleted": false,
+    "isApproved": true,
+    "isDenied": false
+  },
+  {
+    "ID": 1997823150,
+    "Product": 621035414,
+    "Reviewer": 899438607,
+    "Title": "Gde je baterija?",
+    "Content": "Očekivao sam bateriju a nisam je dobio, kako da radim sa aku alatom bez akumulatora?",
+    "Image": "c77587da-9e7b-43ec-bfae-e1b152291e66.png",
+    "isDeleted": false,
+    "isApproved": false,
+    "isDenied": true
+  },
+  {
+    "ID": 283909760,
+    "Product": 935202823,
+    "Reviewer": 1565100692,
+    "Title": "Dobar za sve uslove",
+    "Content": "Jedino je problem malo senzor otkucaja srca na njemu - leti ne radi baš kako treba",
+    "Image": "6ccb341b-e873-4f9f-b959-bf0ccd3b556b.jpg",
+    "isDeleted": false,
+    "isApproved": false,
+    "isDenied": false
+  }
+]

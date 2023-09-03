@@ -1,0 +1,167 @@
+[
+  {
+    "ID": 1222415090,
+    "SellerId": 266935553,
+    "Name": "Nelo Cinco C1",
+    "Price": 100000.0,
+    "Amount": 5,
+    "Description": "Nelo Cinco C1 kanu jednoklek, SCS konstrukcija, M velicina (do 70 kg).",
+    "Image": "728e2519-81cd-4f7b-a843-6ebc14301020.jpg",
+    "City": "Novi Sad",
+    "PublishDate": "27/08/2023",
+    "Reviews": [
+      1099299249,
+      1992489227
+    ],
+    "isAvailable": true,
+    "isDeleted": false
+  },
+  {
+    "ID": 1992207783,
+    "SellerId": 165993531,
+    "Name": "Bicikl",
+    "Price": 45000.0,
+    "Amount": 39,
+    "Description": "Capriolo 9.2, predni amoritizer, mehaničke disk kočnice na oba točka, 29 inča ram - aluminijumski",
+    "Image": "fca19eae-5669-4e40-9432-3da996636949.jpg",
+    "City": "Bačka Palanka",
+    "PublishDate": "27/08/2023",
+    "Reviews": [],
+    "isAvailable": true,
+    "isDeleted": true
+  },
+  {
+    "ID": 256503792,
+    "SellerId": 165993531,
+    "Name": "Ventilator",
+    "Price": 6599.0,
+    "Amount": 29,
+    "Description": "Ventilator za letnje dane, uvezen iz Nemačke",
+    "Image": "485846f1-1288-4807-bfc3-b858585d56b9.jpg",
+    "City": "Novi Sad",
+    "PublishDate": "27/08/2023",
+    "Reviews": [
+      640427590
+    ],
+    "isAvailable": true,
+    "isDeleted": true
+  },
+  {
+    "ID": 503548116,
+    "SellerId": 165993531,
+    "Name": "Napajanje za  računar",
+    "Price": 8900.0,
+    "Amount": 23,
+    "Description": "Modularno napajanje Polaris, 850W, uz njega dolazi set kablova",
+    "Image": "ac1b1f36-f5c3-4af1-967f-fc2b01704d5f.jpg",
+    "City": "Beograd",
+    "PublishDate": "27/08/2023",
+    "Reviews": [],
+    "isAvailable": true,
+    "isDeleted": true
+  },
+  {
+    "ID": 1280125927,
+    "SellerId": 266935553,
+    "Name": "Napajanje",
+    "Price": 8900.0,
+    "Amount": 31,
+    "Description": "Polaris, 850 W, modularno, stižu i kablovi uz napajanje",
+    "Image": "b331fb98-0276-40a6-8b38-9220247d8759.jpg",
+    "City": "Beograd",
+    "PublishDate": "27/08/2023",
+    "Reviews": [
+      2102951261
+    ],
+    "isAvailable": true,
+    "isDeleted": false
+  },
+  {
+    "ID": 417950794,
+    "SellerId": 266935553,
+    "Name": "Ventilator",
+    "Price": 4500.0,
+    "Amount": 52,
+    "Description": "Ventilator prečnika 50 cm, idealan za letnje dane",
+    "Image": "6dbb069f-ec34-475f-8bee-afd4f8040c2a.jpg",
+    "City": "Bačka  Palanka",
+    "PublishDate": "27/08/2023",
+    "Reviews": [],
+    "isAvailable": true,
+    "isDeleted": false
+  },
+  {
+    "ID": 398721825,
+    "SellerId": 266935553,
+    "Name": "Bicikl",
+    "Price": 45000.0,
+    "Amount": 0,
+    "Description": "Capriolo 9.2, 29 inča točak, aluminijumski ram težine 7 kg, mehaničke disk kočnice na  oba diska, 3 prednje i 8 zadnjih brzina",
+    "Image": "aa2be342-e33b-4ac2-9ae2-4b3bd7c5cfe1.jpg",
+    "City": "Novi Sad",
+    "PublishDate": "27/08/2023",
+    "Reviews": [],
+    "isAvailable": false,
+    "isDeleted": false
+  },
+  {
+    "ID": 932058801,
+    "SellerId": 1598648337,
+    "Name": "Tepih",
+    "Price": 4200.0,
+    "Amount": 3,
+    "Description": "Tepih za dnevni boravak, dimenzija 120x160cm, ravan bez resica",
+    "Image": "227d1c1f-d7a1-43c3-a759-1e9e1207d556.jpg",
+    "City": "Bačka Palanka",
+    "PublishDate": "28/08/2023",
+    "Reviews": [],
+    "isAvailable": true,
+    "isDeleted": false
+  },
+  {
+    "ID": 792554792,
+    "SellerId": 1598648337,
+    "Name": "Aku bušilica",
+    "Price": 12000.0,
+    "Amount": 4,
+    "Description": "Einhell, radi na bateriju koja se kupuje odvojeno, na vrhu ima svetlo koje se pali pri svakom bušenju",
+    "Image": "e5f32c9b-0f58-40a4-a786-2e754262b1ab.jpg",
+    "City": "Novi Sad",
+    "PublishDate": "28/08/2023",
+    "Reviews": [],
+    "isAvailable": true,
+    "isDeleted": false
+  },
+  {
+    "ID": 621035414,
+    "SellerId": 1598648337,
+    "Name": "Baterija za aku bušilicu",
+    "Price": 14000.0,
+    "Amount": 5,
+    "Description": "Einhell univerzalna baterija za njihovu liniju aku alata, 18 V, 4 Ah",
+    "Image": "7e6d806a-5fa5-49f1-88d9-eca75f7151e3.jpg",
+    "City": "Novi Sad",
+    "PublishDate": "28/08/2023",
+    "Reviews": [
+      1997823150
+    ],
+    "isAvailable": true,
+    "isDeleted": false
+  },
+  {
+    "ID": 935202823,
+    "SellerId": 266935553,
+    "Name": "Garmin sat",
+    "Price": 20000.0,
+    "Amount": 12,
+    "Description": "Garmin Forerunner 35, sportski sat sa GPS, ima senzor otkucaja srca, može da se poveže i sa eksternim senzorima preko ANT+, kao i sa Garmin aplikacijom za mobilni telefon",
+    "Image": "5db40638-896f-4a79-a251-825c2afe8a9e.jpg",
+    "City": "Zrenjanin",
+    "PublishDate": "30/08/2023",
+    "Reviews": [
+      283909760
+    ],
+    "isAvailable": true,
+    "isDeleted": false
+  }
+]

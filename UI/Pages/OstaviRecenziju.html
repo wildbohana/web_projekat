@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ostavi recenziju</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav>
+        <nav>
+            <div class="logo">
+                <a href="PocetnaStranica.html">Početna</a>
+            </div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a id="profile-name" href="#"></a>
+                    <div class="dropdown-content">
+                        <button id="logoutBtn" class="blue-btn">Odjava</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <!-- Sadržaj -->
+    <main class="content">
+        <h1 id="title" style="text-align:center">Dodaj recenziju</h1>
+        <form class="reviewForm">
+            <label>Naslov:</label>
+            <input id="name" type="text" class="textbox" placeholder="Naslov" required />
+            <label>Sadržaj:</label>
+            <textarea id="content" type="text" class="textarea" placeholder="Utisci" required></textarea>
+            <label>Slika:</label>
+            <input id="imageUpload" type="file" class="textbox" required />
+            <div>
+                <button id="addBtn" class="green-btn">Dodaj</button>
+                <button id="uploadBtn" class="blue-btn">Slika</button>
+                <button class="red-btn" onclick="DoProfila()">Otkaži</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Skripte -->
+    <script src="../Scripts/jquery-3.7.0.js"></script>
+    <script src="JavaScript/Zajednicko.js"></script>
+    <script src="JavaScript/OstaviRecenziju.js"></script>
+
+</body>
+</html>

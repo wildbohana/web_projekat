@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Proizvod</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav>
+        <nav>
+            <div class="logo">
+                <a href="PocetnaStranica.html">Početna</a>
+            </div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a id="profile-name" href="#"></a>
+                    <div class="dropdown-content">
+                        <button id="logoutBtn" class="blue-btn">Odjava</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <!-- Sadržaj -->
+    <main class="content">
+        <div class="product-form">
+            <h1 id="title">Dodaj proizvod</h1>
+            <label>Naziv proizvoda:</label>
+            <input type="text" id="name" class="textbox" placeholder="Kosilica" required/>
+            <label>Cena:</label>
+            <input type="number" id="price" class="textbox" min="0" placeholder="10000" required/>
+            <label>Količina:</label>
+            <input type="number" id="amount" step="1" class="textbox" placeholder="40" min="0" required/>
+            <label>Opis:</label>
+            <textarea id="desc" class="textarea" placeholder="Crvene boje, kabel 20 metara..." required></textarea>
+            <label>Grad:</label>
+            <input type="text" id="city" class="textbox" placeholder="Bačka Palanka" required/>
+            <label>Slika proizvoda:</label>
+            <input id="imageUpload" type="file" class="textbox" />
+
+            <div>
+                <button id="addBtn" class="green-btn">Dodaj</button>
+                <button id="uploadBtn"class="blue-btn">Slika</button>
+                <button class="red-btn" onclick="DoProfila()">Otkaži</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Skripte -->
+    <script src="../Scripts/jquery-3.7.0.js"></script>
+    <script src="JavaScript/Zajednicko.js"></script>
+    <script src="JavaScript/NoviProizvod.js"></script>
+
+</body>
+</html>
